@@ -7,6 +7,11 @@ body,
 :root {
   height: 100%;
 }
+
+* {
+  font-family: "Apple Gothic", sans-serif;
+  letter-spacing: -0.2px;
+}
  
 @layer base {
   :root {

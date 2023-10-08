@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Navbar from '@/components/navbar';
-import Sidebar from '@/components/sidebar';
+import { Sidebar } from '@/components/sidebar';
 
 const DashboardLayout = ({
   children,

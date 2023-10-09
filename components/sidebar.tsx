@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Montserrat } from 'next/font/google';
-import { LayoutDashboard, MessageSquare, ImageIcon, VideoIcon, Music, Code, Settings } from "lucide-react";
+import { LayoutDashboard, FileCode2, MessageSquare, ImageIcon, VideoIcon, Music, Code, Settings } from "lucide-react";
 import { usePathname } from 'next/navigation';
 
 import { cn } from '@/lib/utils';
@@ -16,6 +16,12 @@ const routes = [
     icon: LayoutDashboard,
     href: '/dashboard',
     color: 'text-sky-500',
+  },
+  {
+    label: 'HTML 생성',
+    icon: FileCode2,
+    href: '/htmlcode',
+    color: 'text-purple-500',
   },
   {
     label: 'Conversation',
@@ -64,7 +70,7 @@ export const Sidebar = () => {
             <Image fill alt='Logo' src='/logo.png' />
           </div>
           <h1 className={ cn('text-2xl font-bold', montserrat.className) }>
-            Logo
+            JARVIS
           </h1>
         </Link>
         <div className='space-y-1'>

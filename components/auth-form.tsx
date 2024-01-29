@@ -45,7 +45,7 @@ const AuthForm = () => {
 
   useEffect(() => {
     if (session?.status === 'authenticated') {
-      router.push('/dashboard');
+      router.push('/home');
       console.log('인증완료');
     }
   }, [session?.status, router]);
@@ -73,7 +73,7 @@ const AuthForm = () => {
 
       if (callback?.ok) {
         toast.success('로그인 성공!');
-        router.push('/dashboard');
+        router.push('/home');
       }
     })
     .finally(() => setSubmitDisabled(false));

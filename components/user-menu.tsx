@@ -33,7 +33,7 @@ const UserMenu = () => {
           <div className='flex flex-col cursor-pointer text-center'>
             <MenuItem
               onClick={() => {
-                signOut();
+                signOut({ callbackUrl: '/' });
               }}
               label='로그아웃'
             />

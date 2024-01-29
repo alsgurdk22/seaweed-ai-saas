@@ -1,6 +1,6 @@
 'use client';
 
-import { MessageSquare, ArrowRight, ImageIcon, VideoIcon, Music, Code, Settings } from 'lucide-react';
+import { FileCode2, MessageSquare, ArrowRight, ImageIcon, VideoIcon, Music, Code, Settings } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 import { Card } from '@/components/ui/card';
@@ -8,40 +8,47 @@ import { cn } from '@/lib/utils';
 
 const tools = [
   {
-    label: 'Conversation',
-    icon: MessageSquare,
-    color: 'text-violet-500',
-    bgColor: 'bg-violet-500/10',
-    href: '/conversation',
-  },
-  {
-    label: 'Image Generation',
-    icon: ImageIcon,
-    color: 'text-pink-700',
-    bgColor: 'bg-pink-700/10',
-    href: '/image',
-  },
-  {
-    label: 'Video Generation',
-    icon: VideoIcon,
+    label: 'HTML 생성',
+    icon: FileCode2,
+    href: '/htmlcode',
     color: 'text-orange-700',
     bgColor: 'bg-orange-700/10',
-    href: '/video',
   },
   {
-    label: 'Music Generation',
-    icon: Music,
-    color: 'text-emerald-500',
-    bgColor: 'bg-emerald-500/10',
-    href: '/music',
+    label: 'CHAT GPT',
+    icon: MessageSquare,
+    href: '/conversation',
+    color: 'text-violet-500',
+    bgColor: 'bg-violet-500/10',
   },
   {
-    label: 'Code Generation',
-    icon: Code,
-    color: 'text-green-700',
-    bgColor: 'bg-green-700/10',
-    href: '/code',
+    label: '이미지 생성',
+    icon: ImageIcon,
+    href: '/image',
+    color: 'text-pink-700',
+    bgColor: 'bg-pink-700/10',
   },
+  // {
+  //   label: 'Video Generation',
+  //   icon: VideoIcon,
+  //   color: 'text-orange-700',
+  //   bgColor: 'bg-orange-700/10',
+  //   href: '/video',
+  // },
+  // {
+  //   label: 'Music Generation',
+  //   icon: Music,
+  //   color: 'text-emerald-500',
+  //   bgColor: 'bg-emerald-500/10',
+  //   href: '/music',
+  // },
+  // {
+  //   label: 'Code Generation',
+  //   icon: Code,
+  //   color: 'text-green-700',
+  //   bgColor: 'bg-green-700/10',
+  //   href: '/code',
+  // },
 ];
 
 const DashboardPage = () => {
@@ -50,10 +57,10 @@ const DashboardPage = () => {
     <div>
       <div className='mb-8 space-y-4'>
         <h2 className='text-2xl md:text-4xl font-bold text-center'>
-          Explore the power of AI
+          AI 비서 JARVIS
         </h2>
         <p className='text-muted-foreground font-light text-sm md:text-lg text-center'>
-          Chat with the smartest AI
+          JARVIS와 함께 업무를 더욱 효율적으로 진행해보세요.
         </p>
       </div>
       <div className='px-4 md:px-20 lg:px-32 space-y-4'>

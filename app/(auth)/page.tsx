@@ -1,5 +1,7 @@
 import Image from "next/image";
+
 import AuthForm from "@/components/auth-form";
+import logoSrc from "@/public/logo.png";
 
 const Auth = () => {
   return (
@@ -20,7 +22,7 @@ const Auth = () => {
           height="48"
           width="48"
           className="mx-auto w-auto animate-bounce"
-          src="/logo.png"
+          src={logoSrc}
           alt="Logo"
         />
         <h2 
